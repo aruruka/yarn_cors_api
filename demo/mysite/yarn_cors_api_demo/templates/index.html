@@ -1,0 +1,16 @@
+{% load static %}
+
+{% block head %}
+{% endblock head %}
+
+{% block content %}
+<button id="myClickButton" type="button">Click</button>
+<div id="myOutput"></div>
+<button id="myClickButton2" type="button">Click</button>
+<div id="myOutput2"></div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/lib/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/api.js' %}"></script>
+{% endblock %}
